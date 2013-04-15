@@ -1,0 +1,21 @@
+//
+// Prefix header for all source files of the 'JetsetSumo' target in the 'JetsetSumo' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <GameKit/GameKit.h>
+    #import <CoreMotion/CoreMotion.h>
+    #import <QuartzCore/QuartzCore.h>
+#endif
+
+#define SESSION_ID @"JetsetSumo"
+#define kHalfDeviceScreenWidth ([[UIScreen mainScreen] bounds].size.height/2)
+#define kHalfDeviceScreenHeight ([[UIScreen mainScreen] bounds].size.width/2)
